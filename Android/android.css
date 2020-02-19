@@ -1,0 +1,11 @@
+body{
+	padding-top: 5%;
+	font-family: 'Roboto Slab', serif;
+}
+h2{
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+#Images{
+	font-size: 1.2em;
+}
