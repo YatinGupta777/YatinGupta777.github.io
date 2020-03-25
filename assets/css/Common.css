@@ -1,3 +1,14 @@
+.navbarLogo{
+	animation: highlight;
+	animation-duration: 4s;
+	animation-iteration-count: 1
+
+}
+@keyframes highlight {
+  from {background-color: black;}
+  to {background-color: #289BFD;}
+}
+
 .page-footer  {
   background-color: #1C2A48; 
 }
