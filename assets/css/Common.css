@@ -23,3 +23,7 @@
 .fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-github, .fa-envelope, .footer-copyright{
 	color: white;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
