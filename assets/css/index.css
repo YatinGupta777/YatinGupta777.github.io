@@ -4,6 +4,9 @@
 */
 #carousel_heading{
     text-align: center;
+    font-size: 200%;
+    font-family: arial;
+    padding-top:1%;
 }
 .carousel_text{
     text-align: center;
