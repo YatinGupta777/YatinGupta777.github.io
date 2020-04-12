@@ -8,6 +8,9 @@
     font-family: arial;
     padding-top:1%;
 }
+#last_carousel_update{
+    font-size:40%;
+}
 .carousel_text{
     text-align: center;
     background-color: #e6e4e1;
