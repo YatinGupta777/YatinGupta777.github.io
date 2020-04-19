@@ -9,6 +9,12 @@
 	*/
 
 }
+.portfolio-block.projects-cards a{
+	color: blue;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #8d8df3;
+}
 /*
 @keyframes highlight {
   from {background-color: black;}
