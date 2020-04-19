@@ -54,9 +54,13 @@ function initMap() {
       ['Mumbai', 19.07598, 72.87765, 2],
       ['Delhi', 28.68627, 77.22178, 1]
     ];
-
+    z = 1;
+    if($(window).width()>=794)
+    {
+        z = 3
+    } 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 1,
+      zoom: z,
       center: new google.maps.LatLng(22.40069, 10.61866),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
