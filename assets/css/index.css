@@ -24,11 +24,19 @@
 .carousel_text{
     text-align: center;
     background-color: #e6e4e1;
+    height: 50px;
 }
 .carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);
 }    
+.carousel-item{
+    height: 250px;
+}
+.carousel-item img{
+    height: 170px;
+    width: 450px;
+}
 @media (min-width: 768px) and (max-width: 991px) {
     /* Show 4th slide on md if col-md-4*/
     .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
