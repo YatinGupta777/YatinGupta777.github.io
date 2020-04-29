@@ -1,3 +1,10 @@
+#brand{
+	font-family: cursive;
+	color: #561B8B;
+}
+#brackets{
+	color:#561B8B;
+}
 .navbar-toggler{
 	background-color: black;
 }
