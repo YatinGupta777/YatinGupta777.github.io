@@ -16,6 +16,13 @@
 	*/
 
 }
+#project_quote{
+	width: 100%;
+	max-width: 100%;
+	font-family: Courier New;
+	text-shadow: 1px 1px #FF0000;
+	font-size: 120%;
+}
 .portfolio-block.projects-cards a{
 	color: blue;
 	text-decoration: none;
@@ -40,3 +47,5 @@
   background-color: black;
   color: white;
 }
+
+
