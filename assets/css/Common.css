@@ -43,9 +43,13 @@
 .fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-github, .fa-envelope, .fa-stack-overflow, .footer-copyright {
 	color: white;
 }
+.footer-copyright{
+	font-size: 0.7rem;
+}
+/*
 .dark-mode {
   background-color: black;
   color: white;
 }
 
-
+*/
