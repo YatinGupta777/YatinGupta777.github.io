@@ -4,8 +4,7 @@
 */
 
 #linkedinThumbnailImage{
-    position :absolute;
-    right :-999px ;
+    display: none;
 }
 #map {
         height: 400px;  /* The height is 400 pixels */
