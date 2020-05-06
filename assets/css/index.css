@@ -2,10 +2,15 @@
     code by Iatek LLC 2018 - CC 2.0 License - Attribution required
     code customized by Azmind.com
 */
+
+#linkedinThumbnailImage{
+    position :absolute;
+    right :-999px ;
+}
 #map {
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
-    }
+    }    
 #carousel_heading{
     text-align: center;
     font-size: 200%;
