@@ -260,6 +260,13 @@ nav .navbar-nav li a{
         visibility: visible;
     }
 }
+.heading{
+    color: white;
+}
+.portfolio-block
+{
+    padding-top: 20px;
+}
 #project_quote{
     width: 100%;
     max-width: 100%;
@@ -270,7 +277,7 @@ nav .navbar-nav li a{
 .portfolio-block.projects-cards a{
     color: blue;
     text-decoration: none;
-    padding-bottom: 1px;
+    padding : 0 0;
     border-bottom: 1px solid #8d8df3;
 }
 .page-footer  {
