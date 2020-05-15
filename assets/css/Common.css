@@ -1,21 +1,6 @@
-#brand{
-	font-family: cursive;
-	color: #561B8B;
-}
-#brackets{
-	color:#561B8B;
-}
-.navbar-toggler{
-	background-color: black;
-}
-.navbarLogo{
 
-	/*
-	animation: highlight;
-	animation-duration: 4s;
-	*/
 
-}
+
 #project_quote{
 	width: 100%;
 	max-width: 100%;
@@ -29,14 +14,8 @@
 	padding-bottom: 1px;
 	border-bottom: 1px solid #8d8df3;
 }
-/*
-@keyframes highlight {
-  from {background-color: black;}
-  to {background-color: #289BFD;}
-}
-*/
 .page-footer  {
-  background-color: #1C2A48; 
+  background-color: #222222; 
 }
 .page-footer .container{
 }
@@ -46,10 +25,4 @@
 .footer-copyright{
 	font-size: 0.7rem;
 }
-/*
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 
-*/

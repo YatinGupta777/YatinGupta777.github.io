@@ -1,6 +1,19 @@
 /*
     Carousel
 */
+// var myNav = document.getElementById('myNavbar');
+// window.onscroll = function () { 
+//     "use strict";
+//      if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 200 )
+//     {
+//         myNav.classList.add("nav-colored");
+//         myNav.classList.remove("nav-transparent");
+//     } 
+//     else {
+//         myNav.classList.add("nav-transparent");
+//         myNav.classList.remove("nav-colored");
+//     }
+// };
 $('#carousel-example').on('slide.bs.carousel', function (e) {
     /*
         CC 2.0 License Iatek LLC 2018 - Attribution required

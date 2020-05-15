@@ -6,21 +6,116 @@
 #linkedinThumbnailImage{
     display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #222222;
+}
+.nav-colored { 
+    background-color:white ; 
+    opacity: 0.8;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+hr{
+    color: white;
+    background-color: white;
+    border-width: 10px;
+}
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+#intro {
+    background: url("me.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#brand{
+    font-family: cursive;
+}  
+nav .navbar-nav li a{
+  color: black !important;
+  }
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+ color:white ;
+ display:inline-block; 
+ background-color: black;
+}
+.description li{
+ font-size: 20px;
+ line-height: 1.5;
+ color:white ;
+ background-color: black;   
+ display: inline-block;
+ padding-left: 2px;
+ padding-right: 2px;
+ clear:both;
+ float:left;
+}
+#seeMore{
+ margin-top:2%; 
+ clear:both;
+ float:left;
+ border:1px  solid #F97300;
+ background:#F97300;
+ color:#fff;
+}
+#contactMe{
+    position: absolute;
+    bottom: 10%;
+    margin: auto;
+    padding: 2em; 
+   clear:both;
+   float:left; 
+   color: white;
+}
+#contactMeIcons{
+      background-color: gray;      
+}
+#contactMeIcons a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#aboutMeText{
+    font-size: 1.2rem;
+    text-align: center;
+}
+#hobbies{
+    text-align: center;
+}
 #map {
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
     }    
-#carousel_heading{
-    text-align: center;
-    font-size: 200%;
-    font-family: arial;
-    padding-top:1%;
-}
 #map_heading{
     text-align: center;
     font-size: 200%;
     font-family: arial;
     padding-top:1%;
+    color: white;
+}
+#carousel_heading{
+    text-align: center;
+    font-size: 200%;
+    font-family: arial;
+    padding-top:1%;
+    color: white;
 }
 #last_carousel_update{
     font-size:40%;
@@ -30,10 +125,33 @@
     background-color: #e6e4e1;
     height: 50px;
 }
-.carousel-control-next,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+/*.carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);
-}    
+} */   
 .carousel-item{
     height: 250px;
 }
@@ -168,3 +286,39 @@
         visibility: visible;
     }
 }
+.heading{
+    color: white;
+}
+.portfolio-block
+{
+    padding-top: 20px;
+}
+.portfolio-block .heading{
+    margin-bottom: 40px;
+}
+#project_quote{
+    width: 100%;
+    max-width: 100%;
+    font-family: Courier New;
+    text-shadow: 1px 1px #FF0000;
+    font-size: 120%;
+}
+.portfolio-block.projects-cards a{
+    color: blue;
+    text-decoration: none;
+    padding : 0 0;
+    border-bottom: 1px solid #8d8df3;
+}
+.page-footer  {
+  background-color: #222222; 
+}
+.page-footer .container{
+}
+.fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-github, .fa-envelope, .fa-stack-overflow, .footer-copyright {
+    color: white;
+}
+.footer-copyright{
+    font-size: 0.7rem;
+}
+
+
