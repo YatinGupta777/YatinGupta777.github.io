@@ -14,12 +14,6 @@
 	padding-bottom: 1px;
 	border-bottom: 1px solid #8d8df3;
 }
-/*
-@keyframes highlight {
-  from {background-color: black;}
-  to {background-color: #289BFD;}
-}
-*/
 .page-footer  {
   background-color: #222222; 
 }
@@ -31,10 +25,4 @@
 .footer-copyright{
 	font-size: 0.7rem;
 }
-/*
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 
-*/

@@ -2,6 +2,9 @@
     code by Iatek LLC 2018 - CC 2.0 License - Attribution required
     code customized by Azmind.com
 */
+html {
+  scroll-behavior: smooth;
+}
 body{
     background-color: #222222;
 }
@@ -35,7 +38,6 @@ header,
 }
 #brand{
     font-family: cursive;
-   
 }  
 nav .navbar-nav li a{
   color: black !important;
@@ -63,12 +65,28 @@ nav .navbar-nav li a{
  float:left;
 }
 #seeMore{
-    margin-top:2%; 
+ margin-top:2%; 
  clear:both;
  float:left;
  border:1px  solid #F97300;
  background:#F97300;
  color:#fff;
+}
+#contactMe{
+    position: absolute;
+    bottom: 10%;
+    margin: auto;
+    padding: 2em; 
+   clear:both;
+   float:left; 
+   color: white;
+}
+#contactMeIcons{
+      background-color: gray;      
+}
+#contactMeIcons a{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #aboutMeText{
     font-size: 1.2rem;
@@ -242,3 +260,29 @@ nav .navbar-nav li a{
         visibility: visible;
     }
 }
+#project_quote{
+    width: 100%;
+    max-width: 100%;
+    font-family: Courier New;
+    text-shadow: 1px 1px #FF0000;
+    font-size: 120%;
+}
+.portfolio-block.projects-cards a{
+    color: blue;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #8d8df3;
+}
+.page-footer  {
+  background-color: #222222; 
+}
+.page-footer .container{
+}
+.fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-github, .fa-envelope, .fa-stack-overflow, .footer-copyright {
+    color: white;
+}
+.footer-copyright{
+    font-size: 0.7rem;
+}
+
+
