@@ -30,12 +30,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="index.html"><span id="brackets"><</span><span id="brand">Yatin Gupta</span><span id="brackets">/></span></a><button data-toggle="collapse" class="navbar-toggler navbarLogo" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+  <header>
+
+    <nav id="myNavbar"class="navbar navbar-light navbar-expand-lg fixed-top portfolio-navbar nav-colored">
+        <div class="container"><a class="navbar-brand logo" href="index.html"><span id="brand">Yatin Gupta</span></a><button data-toggle="collapse" class="navbar-toggler navbarLogo" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="updates.html">Updates</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="misc.html">Misc</a></li>
@@ -44,28 +46,59 @@
             </div>
         </div>
     </nav>
-    
-    <main class="page lanidng-page">
-        <section class="portfolio-block block-intro">
-            <div class="container"><div class="avatar" style="background-image:url('assets/img/me1.jpeg');"></div>
-                <div class="about-me"><p>Final Year Software Engineering Student at Delhi Technological University. Likes to develop applications using required technologies, learning stuff on the go. Passionate about learning new things.
- <div id="hobbies">
-        
-        <i class="fas fa-book-open fa-2x"></i>
-        <i class="fas fa-basketball-ball fa-2x"></i>
-        <i class="fas fa-swimmer fa-2x"></i>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUlSURBVGhD7ZlVqHVFGIaPgYmJrRgYiN2iFzYIKiqKjRfWhX0j1oWgiIEo2IUo3lgYYGBgY3d3t5jY7fPofuFz/Xvtc/6DJ9bhvPDw7zP/7FnzzrxrZtbaQ9OaItoOnoEf4CnYFkaj2WFHuARehC/hN/gIHoaTYF0YE20Nf8Jf5d/fYROYGe0Jb4DfH45bYG34X7QV3Ah22sZvB0fUUfPv62EkmguuhHTydTgG1oFz4D34EPaFs+BrsN7PsB+MSvPAQfA85MI/QcwcD3bAz4/CcFoAHgLrfwcXw1uwLJwCxnRhOBpegaXgQngHMvvHwYhlw6fBF+CXxVE6FhaBPSBmEo/zYJA08QhY901YDdSh4Kg/DZqInCXLvVfmB6P4K2hoZxiozeA6SCflq96/L8MSENlw6rwPi0GbNGGHUn9LiJwJR1xzDqCaBc6Gt8GZyXU17fddFGyzr26FXMg8XgHrwULglFtezbhSWWYH6kg2ZTxjwtlzpN+FlUETmQk7acyWA00YQWciMVsaLoMfwbZOhr5yKbWCjTRHt2lmcfBm9++joE2O7M0QE8uA8qb1HnkW6iAcBpYbQU1Emrf8XtgcbO8zmBVm0N1ghbase8GYsVNm1cYXhDYdAdYX94vImXD0MzMqcXKGmzFzJlzdErPnwDY3hhm0AXgz/QJ9naJqRs6HNs0BH4P1Lup9Xh1qnJwZzawCNU41ZppwkI1oYuZSb7tHQl/dD1Zw02vTCmAdZyQrTz+5bFvPNtVu8D0047Q/mPtmnIyZ5X5fE5ErZ5bi0y3oJ0fICkbGkZsTmjocrOM9Mki3gfX2+eevf9t7DTIzKnGy3JlZCVTi5OjXmM0GV0E2yXOhr2zgUrCSuLNWGbnsGztYMECfg/W2AE1ks3NmNLMG1DjVmNU4JWYmQROurrZn2yfAQHlx9xKn8FSwEeUNawOaabuPlDuy9b4FV0Nvzhqn3cEl/jGocToAvEebcXLRsP4d4L3nXmf7e8OwOhA8ifoFDV0NOV4Yr0GKEQfD5fpTWB+Us+6Z6iX4BBIzB8aZ8BRcVzPj5LVfAGfG+t5rf8CgTfg/8gjtRbPHiPdPHcV+cte1rjPiHrQ9xIztJU41ZjVOidmqoAnj5EwYM03Y9n0w03J18kJPwiEWDCNPuF7MmUykvKeMxxNQB8Jzm8v+A1DjZCIsvxM0obzpvwHbrsecMZUXE0c9q5On6BqzxMmHtLqaJU6WJ2aadCBt8yYYN8WIEairkzMTMzVOidlaUOOUmHk8sT2X6tYD41goRqQZJ1c/Y6O5GidP1C4wd0Hi5P/nSOIjcPaacZGdqEbcU1YElTgZkxqzxOlxSMzmBpfcmHCPGVflGGMkbuh99tmiuTolZhtCjVNi5gIwYSbUTmAH0uGc4dxX7OCiEFnX8ntAE86Y5688nToYE2JCnQF2wkPdfLApvNorE89Kzowdvqb3t0+inp182kw9zS0JEyKz/gHYEWNTH5tHivePx5hBx6Axl0+MtVOuQh7dfZXkW5OKs3Ftj8vBM9VGMOHaBTz0acDni71gXuiUqglPzEasc6omTrSgi5o2MVk0JUzsCp004Qrk8XobOBg6aWJ58BhuxyudM+GhzY57An2w99kjSGdUTXh6dYfO8dy3GZ1QPxM+d/ujpWU+Y0x6tZm4oFfmq6G8JJi0GokJ30JOak0JEyo/j3XahMqrSH8Q7awJ5a9PdtxnZ99odNKEynslDXTWRKQZfzI7E9a0YFrTGo2Ghv4GQvTzoImZTLAAAAAASUVORK5CYII=">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7dlPK0RRGMfxS0qJEGVhaWdnwcbOyluQjT8LW4qdwgbvwBrZWFnKSvEGbJANKRZEoih/4vuMmTqdHjNnxpzmmTq/+tTMnWfu3F/3XuPOzVJSUipOB5Zwhnd8G/GFWQSlH5fQViQ+8Fgj95hGybTjClqBgmf0wHSWoW28bxGdNdCGoJxC23BLFlA0jZDjX3uzJTsoGjk/tDdak4pYE1xEzpOX/GOLgos8Qb4n5E+svxILyioisXqoRS3yiTtvWSzRiuyjC5Ih3EKbq5YoRWRPdMPNJLTZcrzhrz0cpYh8mJ9haLOhNtAMyShe4b4e7dAahJtVaHMhrtEEN+twZ6IVucEUZE+s4T//rx3Bj1x/uDPRilSTfBH3ws0e3Jm6KCLOMYYRbOWXueqmSCmpiDWpiDWpiDWpiDWpiDWpiDUmi1zgGP5VYDHmisgdsQZI+iAXaNqcz1QR2ehCiULklpo26zNV5AR+xqHN+kwVkZ+R3B8tZO8cQJv1mTtH5HNWMIPD/LIQ5opUqmSRFsh97IfcsyxrhbaiWttEycxh4vdhLvPYNWQbA0hJSQlOlv0AZRUEaoH8ItQAAAAASUVORK5CYII=">
-        <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
-        <i class="fas fa-futbol fa-2x"></i>
-       <img src="https://img.icons8.com/android/50/000000/boxing.png">
-       <img src="https://img.icons8.com/metro/52/000000/dancing.png">
-      </div>
-</p></div>
+
+        <!--Mask-->
+        <div id="intro" class="view">
+
+          <div class="container">
+                <div class="description ">
+                  <h1> Hi! I am Yatin Gupta </h1> 
+                  <ul>
+                    <li>Reader</li>
+                    <li>Dreamer</li>
+                    <li>Developer</li>
+                  </ul>
+                  <a id="seeMore" class="btn btn-outline-secondary btn-lg" href="#aboutMe" >See more</a> 
+                </div>
+          </div>
+            
+
+        </div>
+        <!--/.Mask-->
+
+    </header>
+    <!--Main Navigation-->
+
+    <a class="anchor" id="aboutMe"></a>
+        <!--Main Layout-->
+        <main>
+          <div class="container" >
+            <!--Grid row-->
+            <div class="row py-5">
+              <!--Grid column-->
+              <div class="col-md-12 text-center">
+                <p>Final Year Software Engineering Student at Delhi Technological University. Likes to develop applications using required technologies, learning stuff on the go. Passionate about learning new things.
+                  using required technologies, learning stuff on the go. Passionate about learning new things.
+                <div id="hobbies">
+                  
+                  <i class="fas fa-book-open fa-2x"></i>
+                  <i class="fas fa-basketball-ball fa-2x"></i>
+                  <i class="fas fa-swimmer fa-2x"></i>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUlSURBVGhD7ZlVqHVFGIaPgYmJrRgYiN2iFzYIKiqKjRfWhX0j1oWgiIEo2IUo3lgYYGBgY3d3t5jY7fPofuFz/Xvtc/6DJ9bhvPDw7zP/7FnzzrxrZtbaQ9OaItoOnoEf4CnYFkaj2WFHuARehC/hN/gIHoaTYF0YE20Nf8Jf5d/fYROYGe0Jb4DfH45bYG34X7QV3Ah22sZvB0fUUfPv62EkmguuhHTydTgG1oFz4D34EPaFs+BrsN7PsB+MSvPAQfA85MI/QcwcD3bAz4/CcFoAHgLrfwcXw1uwLJwCxnRhOBpegaXgQngHMvvHwYhlw6fBF+CXxVE6FhaBPSBmEo/zYJA08QhY901YDdSh4Kg/DZqInCXLvVfmB6P4K2hoZxiozeA6SCflq96/L8MSENlw6rwPi0GbNGGHUn9LiJwJR1xzDqCaBc6Gt8GZyXU17fddFGyzr26FXMg8XgHrwULglFtezbhSWWYH6kg2ZTxjwtlzpN+FlUETmQk7acyWA00YQWciMVsaLoMfwbZOhr5yKbWCjTRHt2lmcfBm9++joE2O7M0QE8uA8qb1HnkW6iAcBpYbQU1Emrf8XtgcbO8zmBVm0N1ghbase8GYsVNm1cYXhDYdAdYX94vImXD0MzMqcXKGmzFzJlzdErPnwDY3hhm0AXgz/QJ9naJqRs6HNs0BH4P1Lup9Xh1qnJwZzawCNU41ZppwkI1oYuZSb7tHQl/dD1Zw02vTCmAdZyQrTz+5bFvPNtVu8D0047Q/mPtmnIyZ5X5fE5ErZ5bi0y3oJ0fICkbGkZsTmjocrOM9Mki3gfX2+eevf9t7DTIzKnGy3JlZCVTi5OjXmM0GV0E2yXOhr2zgUrCSuLNWGbnsGztYMECfg/W2AE1ks3NmNLMG1DjVmNU4JWYmQROurrZn2yfAQHlx9xKn8FSwEeUNawOaabuPlDuy9b4FV0Nvzhqn3cEl/jGocToAvEebcXLRsP4d4L3nXmf7e8OwOhA8ifoFDV0NOV4Yr0GKEQfD5fpTWB+Us+6Z6iX4BBIzB8aZ8BRcVzPj5LVfAGfG+t5rf8CgTfg/8gjtRbPHiPdPHcV+cte1rjPiHrQ9xIztJU41ZjVOidmqoAnj5EwYM03Y9n0w03J18kJPwiEWDCNPuF7MmUykvKeMxxNQB8Jzm8v+A1DjZCIsvxM0obzpvwHbrsecMZUXE0c9q5On6BqzxMmHtLqaJU6WJ2aadCBt8yYYN8WIEairkzMTMzVOidlaUOOUmHk8sT2X6tYD41goRqQZJ1c/Y6O5GidP1C4wd0Hi5P/nSOIjcPaacZGdqEbcU1YElTgZkxqzxOlxSMzmBpfcmHCPGVflGGMkbuh99tmiuTolZhtCjVNi5gIwYSbUTmAH0uGc4dxX7OCiEFnX8ntAE86Y5688nToYE2JCnQF2wkPdfLApvNorE89Kzowdvqb3t0+inp182kw9zS0JEyKz/gHYEWNTH5tHivePx5hBx6Axl0+MtVOuQh7dfZXkW5OKs3Ftj8vBM9VGMOHaBTz0acDni71gXuiUqglPzEasc6omTrSgi5o2MVk0JUzsCp004Qrk8XobOBg6aWJ58BhuxyudM+GhzY57An2w99kjSGdUTXh6dYfO8dy3GZ1QPxM+d/ujpWU+Y0x6tZm4oFfmq6G8JJi0GokJ30JOak0JEyo/j3XahMqrSH8Q7awJ5a9PdtxnZ99odNKEynslDXTWRKQZfzI7E9a0YFrTGo2Ghv4GQvTzoImZTLAAAAAASUVORK5CYII=">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7dlPK0RRGMfxS0qJEGVhaWdnwcbOyluQjT8LW4qdwgbvwBrZWFnKSvEGbJANKRZEoih/4vuMmTqdHjNnxpzmmTq/+tTMnWfu3F/3XuPOzVJSUipOB5Zwhnd8G/GFWQSlH5fQViQ+8Fgj95hGybTjClqBgmf0wHSWoW28bxGdNdCGoJxC23BLFlA0jZDjX3uzJTsoGjk/tDdak4pYE1xEzpOX/GOLgos8Qb4n5E+svxILyioisXqoRS3yiTtvWSzRiuyjC5Ih3EKbq5YoRWRPdMPNJLTZcrzhrz0cpYh8mJ9haLOhNtAMyShe4b4e7dAahJtVaHMhrtEEN+twZ6IVucEUZE+s4T//rx3Bj1x/uDPRilSTfBH3ws0e3Jm6KCLOMYYRbOWXueqmSCmpiDWpiDWpiDWpiDWpiDWpiDUmi1zgGP5VYDHmisgdsQZI+iAXaNqcz1QR2ehCiULklpo26zNV5AR+xqHN+kwVkZ+R3B8tZO8cQJv1mTtH5HNWMIPD/LIQ5opUqmSRFsh97IfcsyxrhbaiWttEycxh4vdhLvPYNWQbA0hJSQlOlv0AZRUEaoH8ItQAAAAASUVORK5CYII=">
+                  <i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
+                  <i class="fas fa-futbol fa-2x"></i>
+                 <img src="https://img.icons8.com/android/50/000000/boxing.png">
+                 <img src="https://img.icons8.com/metro/52/000000/dancing.png">
+                </div>
+                </p>
+              </div>
+              <!--Grid column-->
             </div>
-        </section>
-        <section class="portfolio-block photography"></section>
-            </main>
+            <!--Grid row-->
+          </div>
+        </main>
+        <!--Main Layout-->
     
 
 <!-- Top content -->
