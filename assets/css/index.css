@@ -15,7 +15,7 @@ body{
 a.anchor {
     display: block;
     position: relative;
-    top: -250px;
+    top: -200px;
     visibility: hidden;
 }
 hr{
@@ -122,10 +122,33 @@ nav .navbar-nav li a{
     background-color: #e6e4e1;
     height: 50px;
 }
-.carousel-control-next,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+/*.carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);
-}    
+} */   
 .carousel-item{
     height: 250px;
 }
@@ -266,6 +289,9 @@ nav .navbar-nav li a{
 .portfolio-block
 {
     padding-top: 20px;
+}
+.portfolio-block .heading{
+    margin-bottom: 40px;
 }
 #project_quote{
     width: 100%;
