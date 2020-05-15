@@ -55,7 +55,9 @@ nav .navbar-nav li a{
 .description h1{
  color:white ;
  display:inline-block; 
- background-color: black;
+}
+.description span{
+    background-color:  black;
 }
 .description li{
  font-size: 20px;
