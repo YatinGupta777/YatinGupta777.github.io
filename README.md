@@ -14,3 +14,6 @@ Check security using : https://www.whynopadlock.com/
 ### Design : Single page or Multi page ? 
 1. https://www.justinmind.com/blog/single-page-vs-multi-page-websites-design-battle/
 2. https://devrix.com/tutorial/one-page-vs-multi-page-website/
+
+### Testing on different screens
+1. https://ready.mobi/#1600895-ysvp
