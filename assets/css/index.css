@@ -100,7 +100,9 @@ nav .navbar-nav li a{
     padding-right: 10px;
 }
 
-#contactMeIcons{  
+/*Floating Animation*/
+
+/*#contactMeIcons{  
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: 3;
@@ -110,7 +112,7 @@ nav .navbar-nav li a{
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 10px); }
     to   { transform: translate(0, -0px); }    
-}
+}*/
 
 #aboutMeText{
     font-size: 1.2rem;
