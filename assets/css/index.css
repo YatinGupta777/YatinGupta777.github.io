@@ -120,15 +120,36 @@ nav .navbar-nav li a{
         display: inline-block;
         border-radius: 60px;
         box-shadow: 0px 0px 2px #888;
-        padding: 0.5em 0.5em; 
-        background-color: white;
-        color: black;
+        padding: 0.5em 0.5em;       
 }
 #contactMeIcons a{
     padding-left: 10px;
     padding-right: 10px;
 }
-
+#contactMeIcons .fa-facebook-f {
+    background-color: #1778F2;
+    color: white;
+}
+#contactMeIcons .fa-twitter {
+    background-color: #01AEEF;
+    color: white;
+}
+#contactMeIcons .fa-linkedin-in {
+    background-color: #007AB9;
+    color: white;
+}
+#contactMeIcons .fa-github {
+    background-color: #1B1F23;
+    color: white;
+}
+#contactMeIcons .fa-stack-overflow {
+    background-color: white;
+    color: #F48025;
+}
+#contactMeIcons .fa-envelope {
+    background-color: #F84438;
+    color: white;
+}
 /*Floating Animation*/
 
 /*#contactMeIcons{  
