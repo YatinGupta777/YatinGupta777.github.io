@@ -83,21 +83,35 @@ nav .navbar-nav li a{
     bottom: 10%;
     margin: auto;
     padding: 2em; 
-   clear:both;
-   float:left; 
-   color: white;
+    clear:both;
+    float:left; 
+    color: white;
 }
-#contactMeIcons i.fa,#contactMeIcons i.fa-lg{
-       display: inline-block;
+#contactMeIcons i.fa, #contactMeIcons i.fa-lg{
+        display: inline-block;
         border-radius: 60px;
         box-shadow: 0px 0px 2px #888;
         padding: 0.5em 0.5em; 
-        background-color: black;
+        background-color: white;
+        color: black;
 }
 #contactMeIcons a{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#contactMeIcons{  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
+}
+
 #aboutMeText{
     font-size: 1.2rem;
     text-align: center;
