@@ -122,10 +122,23 @@ nav .navbar-nav li a{
         box-shadow: 0px 0px 2px #888;
         padding: 0.5em 0.5em;       
 }
-#contactMeIcons a{
-    padding-left: 10px;
-    padding-right: 10px;
+
+/*Social media icons, defining the distance between them*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #contactMeIcons a{
+    margin-left: 2px;
+    margin-right: 2px;
+    }   
 }
+@media only screen and (min-width: 769px) {
+  /* For mobile phones: */
+  #contactMeIcons a{
+    margin-left: 10px;
+    margin-right: 10px;
+    }   
+}
+
 #contactMeIcons .fa-facebook-f {
     background-color: #1778F2;
     color: white;
@@ -384,9 +397,7 @@ nav .navbar-nav li a{
 .page-footer  {
   background-color: #222222; 
 }
-.page-footer .container{
-}
-.fa-facebook-f, .fa-twitter, .fa-linkedin-in, .fa-github, .fa-envelope, .fa-stack-overflow, .footer-copyright {
+.footer-copyright {
     color: white;
 }
 .footer-copyright{
