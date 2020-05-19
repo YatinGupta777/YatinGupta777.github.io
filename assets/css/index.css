@@ -136,9 +136,9 @@ nav .navbar-nav li a{
   #contactMeIcons a{
     margin-left: 10px;
     margin-right: 10px;
+
     }   
 }
-
 #contactMeIcons .fa-facebook-f {
     background-color: #1778F2;
     color: white;
@@ -163,19 +163,16 @@ nav .navbar-nav li a{
     background-color: #F84438;
     color: white;
 }
-/*Floating Animation*/
-
-/*#contactMeIcons{  
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: 3;
-    animation-timing-function: ease-in-out;
+/*If want to rotate social media icons*/
+#contactMeIcons a i:hover {
+    -webkit-animation:spin 3s linear 1;
+    -moz-animation:spin 3s linear 1;
+    animation:spin 3s linear 1;
 }
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 10px); }
-    to   { transform: translate(0, -0px); }    
-}*/
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 #aboutMeText{
     font-size: 1.2rem;
