@@ -116,7 +116,7 @@ nav .navbar-nav li a{
     float:left; 
     color: white;
 }
-#contactMeIcons i.fa, #contactMeIcons i.fa-lg{
+#contactMeIcons i.fa, #contactMeIcons i.fa-lg, #contactMeIcons img{
         display: inline-block;
         border-radius: 60px;
         box-shadow: 0px 0px 2px #888;
@@ -155,6 +155,11 @@ nav .navbar-nav li a{
     background-color: #1B1F23;
     color: white;
 }
+
+#contactMeIcons .fa-gitlab {
+    background-color: white;
+    color: orange;
+}
 #contactMeIcons .fa-stack-overflow {
     background-color: white;
     color: #F48025;
@@ -162,6 +167,10 @@ nav .navbar-nav li a{
 #contactMeIcons .fa-envelope {
     background-color: #F84438;
     color: white;
+}
+
+#contactMeIcons .google-scholar {
+    background-color: white;
 }
 /*Adding a tooltip text
 *//*
