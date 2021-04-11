@@ -168,6 +168,10 @@ nav .navbar-nav li a{
     background-color: #F84438;
     color: white;
 }
+#contactMeIcons .fa-medium-m {
+    background-color: #000000;
+    color: white;
+}
 
 #contactMeIcons .google-scholar {
     background-color: white;
