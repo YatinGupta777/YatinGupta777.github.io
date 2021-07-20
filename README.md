@@ -1,6 +1,6 @@
 # Portfolio 2.0 
  
-Link :  https://yatingupta.engineer/
+Link :  https://yatingupta.in/
 
 Added SSL using HTTPS enforce setting.
 
