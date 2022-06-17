@@ -67,32 +67,19 @@ function initMap() {
       ['Mumbai', 19.07598, 72.87765, 2],
       ['Delhi', 28.68627, 77.22178, 1]
     ];
-    z = 1;
+    let zoom = 1;
     if($(window).width()>=794)
     {
-        z = 3
+      zoom = 3
     } 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: z,
-      center: new google.maps.LatLng(22.40069, 10.61866),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
-    var infowindow = new google.maps.InfoWindow();
-
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
-      marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
+    const mapDiv = document.getElementById("map");
+    const mapIframe = document.createElement("iframe");
+    mapIframe.src = `https://www.google.com/maps/d/u/0/embed?mid=1YuFkPiqAtrCDTOoGpQB_FVnX0Pndjhmz&ehbc=2E312F&z=${zoom}`
+    mapIframe.width = '100%';
+    mapIframe.height = '500em';
+    mapIframe.frameBorder ="0";
+    mapIframe.scrolling = "0";
+    mapIframe.style.border= "none";
+    mapIframe.style.background = "white";
+    mapDiv.appendChild(mapIframe)
 }

@@ -213,9 +213,9 @@ nav .navbar-nav li a{
     text-align: center;
 }
 #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-    }    
+        margin-top: 10px;
+        margin-bottom: 10px;
+}    
 #map_heading{
     text-align: center;
     font-size: 200%;
