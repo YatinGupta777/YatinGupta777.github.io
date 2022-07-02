@@ -405,6 +405,7 @@ nav .navbar-nav li a{
 .portfolio-block
 {
     padding-top: 20px;
+    padding-bottom: 0px;
 }
 .portfolio-block .heading{
     margin-bottom: 40px;
