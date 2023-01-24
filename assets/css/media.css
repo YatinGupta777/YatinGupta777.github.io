@@ -1,0 +1,15 @@
+#about_me_section {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#about_me_img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+
+#media_section {
+    padding: 10px;
+    margin-top: 10px;
+}
