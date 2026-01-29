@@ -146,7 +146,7 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    padding: 2rem 0 4rem;
+    padding: 1rem 0 1rem;
 }
 
 .section__title {
@@ -849,7 +849,7 @@ img {
     }
 
     .section {
-        padding: 6rem 0 2rem;
+        padding: 1.5rem 0 1rem;
     }
 
     .section__subtitle {
