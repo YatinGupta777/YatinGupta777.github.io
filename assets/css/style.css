@@ -318,6 +318,17 @@ img {
     margin-bottom: var(--mb-2);
 }
 
+.home__btns-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Remove bottom margin from info when inside hero wrapper to align with button */
+.home__btns-wrapper .about__info {
+    margin-bottom: 0;
+}
+
 .home__scroll {
     display: none;
 }
@@ -440,14 +451,11 @@ img {
 .company__logo {
     max-width: 120px;
     height: auto;
-    filter: grayscale(100%);
-    opacity: 0.6;
     transition: 0.3s;
 }
 
 .company__logo:hover {
-    filter: grayscale(0);
-    opacity: 1;
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 568px) {
