@@ -437,7 +437,8 @@ img {
 
 /* Companies Logos */
 .companies__container {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 .companies__grid {
@@ -449,7 +450,7 @@ img {
 }
 
 .company__logo {
-    max-width: 120px;
+    max-width: 80px;
     height: auto;
     transition: 0.3s;
 }
