@@ -82,8 +82,14 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moo
 if (selectedTheme) {
     // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
+    themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme) // If icon was moon, add iconTheme (sun), wait logic is inverted?
+    // fa-moon is the class to ADD to show moon (dark mode active)? No, let's check HTML.
+} else {
+    // Default to dark mode if no selection
+    document.body.classList.add(darkTheme)
+    themeButton.classList.add(iconTheme) // Add sun icon to indicate toggle to light? Wait, let's check default icon.
 }
+
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
